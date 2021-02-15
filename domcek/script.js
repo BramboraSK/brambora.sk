@@ -20,9 +20,10 @@ let [cX, cY] = [0, 200];
 let addX, addY = 1;
 let destination = destinations[i];
 
-setInterval(() => {
+let x = setInterval(() => {
     if(cX === destination[0] && cY === destination[1]) {
         destination = destinations[++i];
+		if(!destination) clearInterval(x);
     } else {
         const [absX, absY] = [Math.abs(destination[0] - cX), Math.abs(destination[1] - cY)];
 
