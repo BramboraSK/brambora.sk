@@ -13,7 +13,7 @@ body {
     color: white;
 }
 
-img {
+#pribeh {
     margin-bottom: 30px;
 }
 
@@ -61,4 +61,16 @@ img {
 
 .pribeh {
     margin: 0 5% 10%;
+}
+
+#up {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#down {
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }

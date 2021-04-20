@@ -47,6 +47,9 @@ for(let i = 0; i < pribehy.length; ++i) {
 const input = document.getElementById("jumpto");
 input.max = String(pribehy.length);
 
+const down_arrow = document.getElementById("down");
+down_arrow.href = `#${pribehy.length}`;
+
 const jumpTo = () => {
     let number = document.getElementById("jumpto").value;
     location.href = `#${number}`;

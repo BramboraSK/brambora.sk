@@ -6,11 +6,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="../img/pribeh.png" alt="pribeh">
+    <img src="../img/pribeh.png" id="pribeh" alt="pribeh">
+
     <div class="nav">
         <input type="number" id="jumpto" min="1" value="1">
         <button id="jumpBtn" onclick="jumpTo()">Skocit</button>
     </div>
+
+    <div class="arrows">
+        <a href="#1" id="up"><img src="../img/up_arrow.png" alt="up" width="50px" height="50px"></a>
+        <a href="#easter_egg" id="down"><img src="../img/down_arrow.png" alt="down" width="50px" height="50px"></a>
+    </div>
+
     <div id="pribehy"></div>
     <script src="script.js"></script>
 </body>
