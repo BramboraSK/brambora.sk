@@ -16,7 +16,15 @@
     <meta property="og:title" content="Bramborova útulná skriňa" />
     <meta property="og:description" content="Ja som Bramborova úžasná multifukčná stránka. Nájdeš tu tak dokonalé veci, že to ani ty nepochopíš." />
 </head>
-<body onload="vygenerujTrubky(5, 5)">
+<body>
+    <!-- Text na stvorec -->
+    <div style="text-align: left;">
+        <h3>Zmena textu na stvorec:</h3>
+        <input id="stvorecInput" type="text" placeholder="Text"><br>
+        <input type="submit" onclick="spravStvorec('stvorecInput')" value="Spraviť!">
+        <p id="textStvorec"><br></p>
+    </div>
+
     <!-- Trubky -->
     <div style="text-align: center;">
         <h3>Generátor trubiek:</h3>
