@@ -1,46 +1,58 @@
 body {
-    background-color: black;
-    background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-    padding: 2rem;
-    color: white;
-    font: 1.3rem Inconsolata, monospace;
-    text-shadow: 0 0 5px #c8c8c8;
+    background-color: #23272A;
+    text-align: center;
 }
 
-a {
-    color: rgba(0, 150, 0, 0.75);
-    text-decoration: none;
+img {
+    padding-bottom: 30px;
 }
 
-body::after {
-    content: "";
+.social-media {
     position: absolute;
+    padding: 20px;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
-    pointer-events: none;
-}
-  
-::selection {
-    background: #0080ff;
-    text-shadow: none;
-}
-  
-pre {
-    margin: 0;
 }
 
-.blink {
-    animation: blinker 1s step-start infinite;
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
 }
 
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+
+.fa-github {
+    background: #000000;
+    color: white;
 }
