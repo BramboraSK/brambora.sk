@@ -71,3 +71,24 @@ const vygenerujTrubky = (wID, hID) => {
 
     document.getElementById("trubky").innerHTML = text;
 }
+
+// Text na stvorec
+const spravStvorec = (inputID) => {
+    const input = document.getElementById(inputID).value;
+    if(input.length % 4 !== 0) return document.getElementById("textStvorec").innerHTML = "Tvoj input nie je delitelny cislom 4.";
+
+    let strana = input.length / 4 + 1;
+
+    let vrch = input.slice(0, strana);
+    let vpravo = input.slice(strana, strana * 2 - 2).split("");
+    let dole = input.slice(strana * 2 - 2, strana * 3 - 2).split("").reverse().join("");
+    let vlavo = input.slice(strana * 3 - 2, strana * 4 - 4).split("").reverse();
+        
+    let output = vrch + "<br>";
+    for(let i = 0; i < vpravo.length; ++i) {
+        output += `${vlavo[i]}${"&nbsp;".repeat(strana - 2)}${vpravo[i]}<br>`;
+    }
+
+    output += dole;
+    document.getElementById("textStvorec").innerHTML = output;
+}
